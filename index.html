@@ -8,98 +8,37 @@
 		padding: 0;
 		margin: 0;
 	}
-	
-	.top {
-		width: 100%;
-		height: 50px;
-		box-shadow: 0 2px 1px #aaa;
-		position: fixed;
-		top: 0;
-		_position: relative;
-		z-index: 100;
-		_top:expression(offsetParent.scrollTop+0);
-		background: white;
-	}
-	
-	.logoframe {
-		
-		margin: auto;
-		width: 160px;
-		position: relative;
-	}
-	
-	.logo {
-		width: 160px;
-		height: 40px;
-		position: absolute;
-		margin: 6px 0 0 10px;
-	}
-	
-	.navframe {
-		float: left;
-		width: 400px;
-		position: relative;
-		margin-left: 15px;
-	}
-	
-	.navbt {
-		float: left;
-		height: 30px;
-		border: rgb(58,127,255) solid 2px;
-		border-radius: 4px;
-		background: white;
-		transition: .2s;
-		margin: 7px 5px;
-		line-height: 30px;
-	}
-	
-	.navbt:hover {
-		background: rgb(58,127,255)
-	}
-	
-	.navbt:hover .navtitle {
-		color: white;
-	}
-	
-	.navtitle {
-		color: rgb(58,127,255);
-		margin: 0 10px;
-		transition: .2s;
-		text-decoration: none;
-	}
-	
-	.contact {
-		float: right;
-		width: 100px;
-		position: relative;
-		margin-right:10px;
-	}
-	
-	.contactbt {
-		float: right;
-		height: 20px;
-		width: 20px;
-		color: #888;
-		margin: 8px 15px;
-	}
-
 </style>
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="font/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/top.css">
+<script src="js/egg.js"></script>
 </head>
 
 <body>
-<div class="top">
-	<div class="logoframe"><img src="logo-header-games.png" class="logo"></div>
-	<div class="navframe">
+<div id="top">
+	<div style="width: 90%; margin: auto">
+	<div id="logoframe"><img src="imgs/logo-header-games.png" width="160" class="logo"/></div>
+	<div id="navframe">
 		<div class="navbt"><a href="index.html" class="navtitle">首页</a></div>
 		<div class="navbt"><a href="download.html" class="navtitle">下载应用</a></div>
 		<div class="navbt"><a href="register.html" class="navtitle">注册</a></div>
 	</div>
-	<div class="contact">
-		<a href="#"><div class="contactbt fa fa-twitter fa-2x"></div></a>
-		<a href="#"><div class="contactbt fa fa-weibo fa-2x"></div></a>
+	<div id="contact">
+		<a href="https://twitter.com/wangyichn"><div class="contactbt fa fa-twitter fa-2x"></div></a>
+		<a href="https://weibo.com/wangyivip"><div class="contactbt fa fa-weibo fa-2x"></div></a>
+	</div>
 	</div>
 </div>
-<div style="height: 2000px; margin-top: 60px ">好懒，先把顶部导航栏做了再说</i></div>
+
+<div style="height: 2000px; margin-top: 60px ">好懒，先把顶部导航栏做了再说</div>
+<div id="footer">
+	<ul>
+		<li><a href="javascript:xieyi()">用户协议</a></li>
+		<li><a href="mailto:wayi@mengzhicai.tk">联系我们</a></li>
+	  	<li><a href="https://twitter.com/wangyichn">作者博客</a></li>
+	</ul>
+	<p>CopyRight © 2017 WAYISAMA</p>
+</div>
 </body>
 </html>
