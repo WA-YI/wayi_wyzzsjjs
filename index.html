@@ -7,12 +7,75 @@
 	* {
 		padding: 0;
 		margin: 0;
+		font-family: "STXihei", sans-serif
 	}
 </style>
 <link rel="stylesheet" href="font/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/page.css">
 <link rel="stylesheet" href="css/top.css">
 <script src="js/egg.js"></script>
+
+<style>
+	.wrapper {
+		width: 1240px;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	
+	.banner {
+		width: 1260px;
+		height: 440px; /*原始比例是697.5px*/
+		background: url(imgs/banner.png) no-repeat;
+		background-size: cover;
+		margin: 0 auto;
+	}
+	
+	.row {
+		width: 1240px;
+		padding: 30px 0;
+	}
+	
+	.imgl {
+		float: left;
+		display: block;
+		text-align: right;
+	}
+	
+	.imgr {
+		float: left;
+		display: block;
+		text-align: left;
+	}
+	
+	.left {
+		float: left;
+		display: block;
+		text-align: left;		
+	}
+	
+	.right {
+		float: left;
+		display: block;
+		text-align: left;
+	}
+	
+	.row h1{
+		font-size: 42px;
+	}
+	
+	.row img{
+		height: 200px;
+	}
+	
+	.textleft {
+		width: 550px;
+		
+	}
+	
+	
+
+</style>
 </head>
 
 <body>
@@ -31,7 +94,17 @@
 	</div>
 </div>
 
-<div style="height: 2000px; margin-top: 60px ">好懒，先把顶部导航栏做了再说</div>
+<div class="banner"></div>
+<div class="wrapper">
+	<div class="row">
+		<div class="imgl"><img src="imgs/01.jpg"></div>
+		<div class="right">
+			<h1>鳄鱼小顽皮爱洗澡</h1>
+		</div>
+	</div>
+
+</div>
+
 <div id="footer">
 	<ul>
 		<li><a href="javascript:xieyi()">用户协议</a></li>
