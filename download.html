@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="font/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/dl.css">
+<link rel="stylesheet" href="css/top.css">
+<script src="js/egg.js"></script>
+	
+<style>
+	.wrapper {
+		width: 90%;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	
+	.dltitle {
+		margin: 30px auto;
+		font-size: 48px;
+		text-align: center;
+	}
+	
+	.list {
+		margin: auto;
+		border: red solid 1px
+	}
+	
+	.filter {
+		height: 32px;
+		font-size: 24px;
+		line-height: 32px;
+		color: #222;
+		padding: 0 0 5px 20px
+	}
+	
+	.fticon {
+		float: left;
+		padding: 0 18px 0 0px;
+		line-height: 32px;
+		color: #bbb
+	}
+	
+	#cate {
+		
+	}
+	
+	.filter ul {
+		float: left;
+		position: relative;
+	}
+	
+	.ftbt {
+		float: left;
+		display: inline-block;
+		font-size: 22px;
+		position: relative;
+		padding: 0 12px;
+	}
+	
+	.ftbt a{
+		color: #222;
+	}
+	
+	.ftbt::after {
+		display: inline-block;
+		content: "";
+		position: absolute;
+		top: 6px;
+		right: 1px;
+		height: 20px;
+		color: #888;
+	}
+	
+	.search {
+		float: right;
+		height: 26px;
+		width: 190px;
+		background: #eee;
+		border: #bbb solid 1px;
+		border-radius: 13px;
+		margin: 3px;
+		font-size: 16px;
+		padding-left: 10px;
+	}
+	
+	.searchbt {
+		float: right;
+		color: #333;
+		font-size: 18px;
+		line-height: 32px;
+		position: relative;
+		left: 193px;
+	}
+	
+	.listframe {
+		padding: 30px 0px;
+	}
+	
+	.item {
+		float: left;
+		width: 210px;
+		height: 280px;
+		overflow: hidden;
+		box-shadow: 0px 0px 7px 1px #222;
+		position: relative;
+		margin: 0 20px 20px 0;
+	}
+	
+	.cover {
+		background: rgba(255,255,255,1.00);
+		box-shadow: 0px 0px 4px 1px #fff;
+		height: 280px;
+		width: 210px;
+		position: absolute;
+		top: 230px; /*调试230px*/
+		text-align: center;
+		font-size: 24px;
+		transition: .4s;
+	}
+	
+	.cover p {
+		background: rgba(255,255,255,.70);
+		padding: 10px 0 10px 0;
+		margin-bottom: 10px;
+	}
+	
+	.itemdl li {
+		width: 180px;
+		height: 40px;
+		line-height: 40px;
+		margin: 5px auto;
+		background: blue;
+	}
+	
+	.item:hover .cover {
+		top: 0;
+		background: rgba(255,255,255,.50);
+	}
+	
+	.endlist {
+		width: 600px;
+		height: 50px;
+		clear: both;
+		box-shadow: 0px 0px 4px 1px #111;
+	}
+	
+	#game01 {
+		background: url(imgs/01.jpg) no-repeat;
+	}
+</style>
+</head>
+
+<body>
+<div id="top">
+	<div style="width: 90%; margin: auto">
+	<div id="logoframe"><img src="imgs/logo-header-games.png" width="160" class="logo"/></div>
+	<div id="navframe">
+		<div class="navbt"><a href="index.html" class="navtitle">首页</a></div>
+		<div class="navbt"><a href="download.html" class="navtitle">下载应用</a></div>
+		<div class="navbt"><a href="register.html" class="navtitle">注册</a></div>
+	</div>
+	<div id="contact">
+		<a href="https://twitter.com/wangyichn"><div class="contactbt fa fa-twitter fa-2x"></div></a>
+		<a href="https://weibo.com/wangyivip"><div class="contactbt fa fa-weibo fa-2x"></div></a>
+	</div>
+	</div>
+</div>
+<div class="banner">
+	<div class="bannerimg"></div>
+</div>
+<div class="wrapper">
+	<div class="dltitle">迪士尼®所有游戏</div>
+	<div class="list">
+		<div class="filter">
+			<div class="fa fa-filter fticon"></div>
+			<ul id="cate" ><div class="fa fa-angle-right fticon"></div>
+				<li class="ftbt"><a href="#" onClick="">全部</a></li>
+				<li class="ftbt"><a href="#" onClick="">益智</a></li>
+				<li class="ftbt"><a href="#" onClick="">冒险</a></li>
+				<li class="ftbt"><a href="#" onClick="">闯关</a></li>
+			</ul>
+			<input type="text" placeholder="搜索" class="search"><a href="javascript:sousuo()" class="fa fa-search searchbt"></a>
+		</div>
+		<div class="listframe">
+			<div id="game01" class="item">
+				<div class="cover">
+					<p>123</p>
+					<ul class="itemdl">
+						<li>11</li>
+						<li>11</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="endlist"></div>
+	</div>
+</div>
+
+<div id="footer">
+	<ul>
+		<li><a href="javascript:xieyi()">用户协议</a></li>
+		<li><a href="mailto:wayi@mengzhicai.tk">联系我们</a></li>
+	  	<li><a href="https://twitter.com/wangyichn">作者博客</a></li>
+	</ul>
+	<p>CopyRight © 2017 WAYISAMA</p>
+</div>
+</body>
+</html>

@@ -1,6 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
 
+	* {
+		padding: 0;
+		margin: 0;
+		font-family: "STXihei", 'Microsoft YaHei UI', sans-serif
+	}
+
+	ul {
+		list-style: none;
+		display: inline-block;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+	text-decoration: none;
+	}
+
 	#top {
 		width: 100%;
 		min-width: 640px;
@@ -73,4 +92,17 @@
 		width: 20px;
 		color: #888;
 		margin: 8px 15px;
+	}
+
+	.banner {
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.bannerimg {
+		width: 1260px;
+		height: 440px; /*原始比例是697.5px*/
+		background: url(../imgs/banner.jpg) no-repeat;
+		background-size: cover;
+		margin: 0 auto;
 	}
