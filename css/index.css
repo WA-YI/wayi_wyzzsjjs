@@ -6,6 +6,15 @@
 		margin: 0 auto;
 		padding: 50px 0;
 	}
+
+	/*首页需要展示内容，所以Wrapper宽，故另设置footer和banner宽度以适配高分屏排版*/
+	#footer {
+		min-width: 1260px;
+	}
+
+	.banner {
+		min-width: 1260px;
+	}
 	
 	.row {
 		width: 1240px;
@@ -92,7 +101,8 @@
 		height: 40px;
 		padding-right: 15px;
 	}
-	
+
+
 	.more {
 		width: 1240px;
 		height: 60px;
@@ -106,6 +116,7 @@
 	.cc {
 		color: #0D327D;
 		transition: .5s;
+		display: inherit;
 	}
 	
 	.more:hover .cc{

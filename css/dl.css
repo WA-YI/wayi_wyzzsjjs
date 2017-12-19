@@ -2,7 +2,168 @@
 /* CSS Document */
 
 	.wrapper {
-		width: 984px;
+		width: 90%;
 		margin: 0 auto;
 		padding: 50px 0;
+	}
+	
+	.dltitle {
+		margin: 30px auto;
+		font-size: 48px;
+		text-align: center;
+	}
+	
+	.list {
+		margin: auto;
+		/*border: red solid 1px*/
+	}
+	
+	.filter {
+		height: 32px;
+		font-size: 24px;
+		line-height: 32px;
+		color: #222;
+		padding: 0 0 5px 20px
+	}
+	
+	.fticon {
+		float: left;
+		padding: 0 18px 0 0px;
+		line-height: 32px;
+		color: #bbb
+	}
+	
+	.filter ul {
+		float: left;
+		position: relative;
+	}
+	
+	.ftbt {
+		float: left;
+		display: inline-block;
+		font-size: 22px;
+		position: relative;
+		padding: 0 12px;
+	}
+	
+	.ftbt a{
+		color: #222;
+	}
+	
+	.ftbt::after {
+		display: inline-block;
+		content: "";
+		position: absolute;
+		top: 6px;
+		right: 1px;
+		height: 20px;
+		color: #888;
+	}
+	#cate {
+		display: none;
+	}	
+
+	.search {
+		float: right;
+		height: 26px;
+		width: 190px;
+		background: #eee;
+		border: #bbb solid 1px;
+		border-radius: 13px;
+		margin: 3px;
+		font-size: 16px;
+		padding-left: 10px;
+	}
+	
+	.searchbt {
+		float: right;
+		color: #333;
+		font-size: 18px;
+		line-height: 32px;
+		position: relative;
+		left: 193px;
+	}
+	
+	.listframe {
+		padding: 30px 0px;
+		margin-right: -20px;
+	}
+	
+	.item {
+		float: left;
+		width: 210px;
+		height: 280px;
+		overflow: hidden;
+		box-shadow: 0px 0px 7px 1px #222;
+		position: relative;
+		margin: 0 20px 20px 0;
+	}
+	
+	.cover {
+		background: rgba(255,255,255,1.00);
+		box-shadow: 0px 0px 4px 1px #fff;
+		height: 280px;
+		width: 210px;
+		position: absolute;
+		top: 230px; /*调试230px*/
+		text-align: center;
+		font-size: 22px;
+		transition: .4s;
+		overflow: hidden;
+	}
+	
+	.cover p {
+		background: rgba(255,255,255,.80);
+		padding: 10px 0 10px 0;
+		margin-bottom: 10px;
+	}
+	
+	.itemdl li {
+		width: 180px;
+		border-radius: 8px;
+		border: solid rgb(39,227,255) 1px;
+		height: 38px;
+		margin: 5px auto;
+		background: rgba(163,233,233,.80);
+		transition: 0.5s;
+		position: relative;
+		color: #222;
+	}
+	
+	.item span {
+		font-size: 22px;
+		line-height: 38px;
+		font-weight: 500;
+	}
+	
+	.item:hover .cover {
+		top: 0;
+		background: rgba(255,255,255,.80);
+	}
+	
+	.itemdl li:hover {
+		background: rgb(30,239,255);
+	}
+	
+	.endlist {
+		width: 33%;
+		min-width: 400px;
+		height: 50px;
+		clear: both;
+		font-size: 32px;
+		text-align: center;
+		padding-top: 35px;
+		/*box-shadow: 0px 0px 4px 1px #111;*/ /*调试用*/
+		margin: auto;
+	}
+	
+	.endlist a {
+		color: #666;
+	}
+	
+	.iconmg {
+		font-size: 22px;
+		position: absolute;
+		top: 8px;
+		left: 13px;
 	}

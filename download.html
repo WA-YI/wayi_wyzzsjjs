@@ -2,154 +2,24 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>下载中心 - 娃斯尼游戏</title>
+	
+
+<!------------------------------------>
+<!--求关注这里↓-->
+<!--这页是在不同终端下分辨率适配最完美的一页！-->
+<!--真的！不骗你！！-->
+<!--不信你用手机和平板试试！~-->
+<!------------------------------------>
+
+
 <link rel="stylesheet" href="font/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/dlimg.css">
 <link rel="stylesheet" href="css/dl.css">
 <link rel="stylesheet" href="css/top.css">
 <script src="js/egg.js"></script>
-	
-<style>
-	.wrapper {
-		width: 90%;
-		margin: 0 auto;
-		padding: 50px 0;
-	}
-	
-	.dltitle {
-		margin: 30px auto;
-		font-size: 48px;
-		text-align: center;
-	}
-	
-	.list {
-		margin: auto;
-		border: red solid 1px
-	}
-	
-	.filter {
-		height: 32px;
-		font-size: 24px;
-		line-height: 32px;
-		color: #222;
-		padding: 0 0 5px 20px
-	}
-	
-	.fticon {
-		float: left;
-		padding: 0 18px 0 0px;
-		line-height: 32px;
-		color: #bbb
-	}
-	
-	#cate {
-		
-	}
-	
-	.filter ul {
-		float: left;
-		position: relative;
-	}
-	
-	.ftbt {
-		float: left;
-		display: inline-block;
-		font-size: 22px;
-		position: relative;
-		padding: 0 12px;
-	}
-	
-	.ftbt a{
-		color: #222;
-	}
-	
-	.ftbt::after {
-		display: inline-block;
-		content: "";
-		position: absolute;
-		top: 6px;
-		right: 1px;
-		height: 20px;
-		color: #888;
-	}
-	
-	.search {
-		float: right;
-		height: 26px;
-		width: 190px;
-		background: #eee;
-		border: #bbb solid 1px;
-		border-radius: 13px;
-		margin: 3px;
-		font-size: 16px;
-		padding-left: 10px;
-	}
-	
-	.searchbt {
-		float: right;
-		color: #333;
-		font-size: 18px;
-		line-height: 32px;
-		position: relative;
-		left: 193px;
-	}
-	
-	.listframe {
-		padding: 30px 0px;
-	}
-	
-	.item {
-		float: left;
-		width: 210px;
-		height: 280px;
-		overflow: hidden;
-		box-shadow: 0px 0px 7px 1px #222;
-		position: relative;
-		margin: 0 20px 20px 0;
-	}
-	
-	.cover {
-		background: rgba(255,255,255,1.00);
-		box-shadow: 0px 0px 4px 1px #fff;
-		height: 280px;
-		width: 210px;
-		position: absolute;
-		top: 230px; /*调试230px*/
-		text-align: center;
-		font-size: 24px;
-		transition: .4s;
-	}
-	
-	.cover p {
-		background: rgba(255,255,255,.70);
-		padding: 10px 0 10px 0;
-		margin-bottom: 10px;
-	}
-	
-	.itemdl li {
-		width: 180px;
-		height: 40px;
-		line-height: 40px;
-		margin: 5px auto;
-		background: blue;
-	}
-	
-	.item:hover .cover {
-		top: 0;
-		background: rgba(255,255,255,.50);
-	}
-	
-	.endlist {
-		width: 600px;
-		height: 50px;
-		clear: both;
-		box-shadow: 0px 0px 4px 1px #111;
-	}
-	
-	#game01 {
-		background: url(imgs/01.jpg) no-repeat;
-	}
-</style>
+<script src="js/filter.js"></script>
 </head>
 
 <body>
@@ -170,35 +40,162 @@
 <div class="banner">
 	<div class="bannerimg"></div>
 </div>
-<div class="wrapper">
+<div class="wrapper" id="all">
 	<div class="dltitle">迪士尼®所有游戏</div>
 	<div class="list">
 		<div class="filter">
-			<div class="fa fa-filter fticon"></div>
-			<ul id="cate" ><div class="fa fa-angle-right fticon"></div>
-				<li class="ftbt"><a href="#" onClick="">全部</a></li>
-				<li class="ftbt"><a href="#" onClick="">益智</a></li>
-				<li class="ftbt"><a href="#" onClick="">冒险</a></li>
-				<li class="ftbt"><a href="#" onClick="">闯关</a></li>
+			<a href="javascript:open()"><div class="fa fa-filter fticon" id="filter"></div></a>
+			<ul id="cate"><div class="fa fa-angle-right fticon"></div>
+				<li class="ftbt"><a href="javascript:all()">全部</a></li>
+				<li class="ftbt"><a href="javascript:mickey()">米老鼠</a></li>
+				<li class="ftbt"><a href="javascript:net()">联机</a></li>
+				<li class="ftbt"><a href="javascript:ap()">全平台</a></li>
 			</ul>
 			<input type="text" placeholder="搜索" class="search"><a href="javascript:sousuo()" class="fa fa-search searchbt"></a>
 		</div>
 		<div class="listframe">
 			<div id="game01" class="item">
 				<div class="cover">
-					<p>123</p>
+					<p>鳄鱼小顽皮爱洗澡</p>
 					<ul class="itemdl">
-						<li>11</li>
-						<li>11</li>
+						<a href="https://play.google.com/store/apps/details?id=com.disney.WMW"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id449735650"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+						<a href="https://www.microsoft.com/zh-cn/store/p/%E9%B3%84%E9%B1%BC%E5%B0%8F%E9%A1%BD%E7%9A%AE%E7%88%B1%E6%B4%97%E6%BE%A1/9wzdncrfjcv2"><li><i class="fa fa-windows iconmg"></i><span>UWP</span></li></a>
 					</ul>
 				</div>
 			</div>
-
+			<div id="game02" class="item">
+				<div class="cover">
+					<p>疯狂动物城犯罪档案</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.disney.zootopiacasefiles_goo"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id1050017714"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+						<a href="https://www.microsoft.com/zh-cn/store/p/%E7%96%AF%E7%8B%82%E5%8A%A8%E7%89%A9%E5%9F%8E%E7%8A%AF%E7%BD%AA%E6%A1%A3%E6%A1%88-%E6%B6%88%E5%A4%B1%E7%9A%84%E7%89%A9%E4%BB%B6/9nblggh4ncct"><li><i class="fa fa-windows iconmg"></i><span>UWP</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game03" class="item">
+				<div class="cover">
+					<p>神庙逃亡：魔境仙踪</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.disney.TempleRunOz.goo"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id595831580"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game04" class="item">
+				<div class="cover">
+					<p>赛车总动员：闪电联盟</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.disney.cars3_goo"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id1187106225"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game05" class="item">
+				<div class="cover">
+					<p>冰雪奇緣: 冰紛樂</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.disney.frozensaga_goo"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id692412579"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game06" class="item">
+				<div class="cover">
+					<p>鸭嘴兽泰瑞在哪里？</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.disney.WMP"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id528805631"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+						<a href="https://www.microsoft.com/zh-cn/store/p/%E9%B4%A8%E5%98%B4%E7%8D%B8%E6%B3%B0%E7%91%9E%E5%9C%A8%E5%93%AA%E8%A3%A1/9wzdncrdctff"><li><i class="fa fa-windows iconmg"></i><span>UWP</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game07" class="item">
+				<div class="cover">
+					<p>星球大战：机器人传奇™</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.disney.starwarspuzzledroids_goo"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id1126172572"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game08" class="item">
+				<div class="cover">
+					<p>美女与野兽</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.disney.beautyandthebeast_goo"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id1171271852"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game09" class="item">
+				<div class="cover">
+					<p>海洋奇缘：部落冒险</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.disney.moanaislandlife_goo"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id1127517805"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game10" class="item">
+				<div class="cover">
+					<p>米奇欢笑多</p>
+					<ul class="itemdl">
+						<a href="https://itunes.apple.com/app/id758438897"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game11" class="item">
+				<div class="cover">
+					<p>Disney Tsum Tsum</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.linecorp.LGTMTMG"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id867964741"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game12" class="item">
+				<div class="cover">
+					<p>怪诞小镇</p>
+					<ul class="itemdl">
+						<a href="http://a3.pc6.com/hxb/Gravityfalls.pc6.apk"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id666432114"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game13" class="item">
+				<div class="cover">
+					<p>迪士尼：我的小玩偶</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=jp.cocone.mylittledoll"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id1123927531"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game14" class="item">
+				<div class="cover">
+					<p>Catch Catch</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.playpark.disneycatchcatch"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id1093349693"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="game15" class="item">
+				<div class="cover">
+					<p>幻影城堡</p>
+					<ul class="itemdl">
+						<a href="https://play.google.com/store/apps/details?id=com.disney.castleofillusion_goo"><li><i class="fa fa-android iconmg"></i><span>Android</span></li></a>
+						<a href="https://itunes.apple.com/app/id646489967"><li><i class="fa fa-apple iconmg"></i><span>iOS</span></li></a>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div class="endlist"></div>
+		<div style="clear: both"></div>
+		<div class="endlist"><a href="#all">已经到底儿啦！<i class="fa fa-level-up"></i></a></div>
 	</div>
 </div>
-
 <div id="footer">
 	<ul>
 		<li><a href="javascript:xieyi()">用户协议</a></li>
