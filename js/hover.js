@@ -1,6 +1,6 @@
 // JavaScript Document
 
-var myLinks = document.getElementsByTagName('a');
+var myLinks = document.getElementsByTagName('div');
 for(var i = 0; i < myLinks.length; i++){
 　　myLinks[i].addEventListener(’touchstart’, function(){this.className = "hover";}, false);
 　　myLinks[i].addEventListener(’touchend’, function(){this.className = "";}, false);
