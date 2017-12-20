@@ -1,3 +1,121 @@
 @charset "utf-8";
 /* CSS Document */
 
+	body {
+		background:url(../imgs/bg.jpg) no-repeat;
+		background-size: cover;
+	}
+	
+	.wrapper {
+		width: 90%;
+		min-width: 450px;
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	
+	.frame {
+		padding-top: 50px;
+	}
+	
+	.title {
+		height: 72px;
+		background: rgba(255,255,255,.70);
+		font-size: 42px;
+		padding: 40px 0 0 40px;
+	}
+	
+	.formframe {
+		background: white;
+		box-shadow: 0px -3px 6px 0px #444;
+		padding: 60px 0;
+		position: relative;
+	}
+	
+	.row {
+		clear: both;
+		padding-bottom: 50px;
+	}
+	
+	.label {
+		width: 35%;
+		font-size: 23px;
+		line-height: 32px;
+		float: left;
+		display: block;
+		text-align: right;
+	}
+	
+	.label2 {
+		font-size: 18px;
+		line-height: 32px;
+		padding: 0 20px 0 5px;
+		float: left;
+	}
+	
+	.input {
+		height: 32px;
+		font-size: 17px;
+		float: left;
+		display: block;
+		margin-left: 3%;
+		padding: 0 8px;
+	}
+	
+	.inputbox {
+		width: 233px;
+		border-radius: 4px;
+		border: #222 solid 1px;
+		transition: .2s;
+	}
+	
+	.input2 {
+		width: 16px;
+		height: 32px;
+		float: left;
+	}
+	
+	.inputbox:hover {
+		border: dodgerblue solid 1px;
+	}
+	
+	.inputbox:hover {
+		border: dodgerblue solid 1px;
+	}
+	
+	#pwwrong {
+		clear: both;
+		color: red;
+		margin: 0 0 -40px 42%;
+		padding-top: 5px;
+		display: none;
+	}
+	
+	.more {
+		width: 300px;
+		clear: both;
+		font-size: 18px;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	
+	.more a {
+		color: steelblue;
+	}
+	
+	.submit {
+		width: 100px;
+		height: 30px;
+		line-height: 24px;
+		font-size: 18px;
+		background: white;
+		border: royalblue solid 2px;
+		border-radius: 4px;
+		color: royalblue;
+		text-align: center;
+		transition: .4s
+	}
+	
+	.submit:hover {
+		box-shadow: 0px 0px 3px 1px royalblue;
+	}
