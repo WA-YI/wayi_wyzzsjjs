@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="font/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/reg.css">
+<link rel="stylesheet" href="css/top.css">
+<script src="js/egg.js"></script>
+	
+<style>
+	body {
+		background:url(imgs/bg.jpg) no-repeat;
+		background-size: cover;
+	}
+	
+	.wrapper {
+		width: 90%;
+		min-width: 450px;
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	
+	.frame {
+		padding-top: 50px;
+	}
+	
+	.title {
+		height: 72px;
+		background: rgba(255,255,255,.70);
+		font-size: 42px;
+		padding: 40px 0 0 40px;
+	}
+	
+	.formframe {
+		background: white;
+		box-shadow: 0px -3px 6px 0px #444;
+		padding: 60px 0;
+		position: relative;
+	}
+	
+	.row {
+		clear: both;
+		padding-bottom: 50px;
+	}
+	
+	.label {
+		width: 35%;
+		font-size: 23px;
+		line-height: 32px;
+		float: left;
+		display: block;
+		text-align: right;
+	}
+	
+	.label2 {
+		font-size: 18px;
+		line-height: 32px;
+		padding: 0 20px 0 5px;
+		float: left;
+	}
+	
+	.input {
+		height: 32px;
+		font-size: 17px;
+		float: left;
+		display: block;
+		margin-left: 3%;
+		padding: 0 8px;
+	}
+	
+	.inputbox {
+		width: 233px;
+		border-radius: 4px;
+		border: #222 solid 1px;
+		transition: .2s;
+	}
+	
+	.input2 {
+		width: 16px;
+		height: 32px;
+		float: left;
+	}
+	
+	.inputbox:hover {
+		border: dodgerblue solid 1px;
+	}
+	
+	.inputbox:hover {
+		border: dodgerblue solid 1px;
+	}
+	
+	#pwwrong {
+		clear: both;
+		color: red;
+		margin: 0 0 -40px 42%;
+		padding-top: 5px;
+		display: none;
+	}
+	
+	.more {
+		width: 300px;
+		clear: both;
+		font-size: 18px;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	
+	.more a {
+		color: steelblue;
+	}
+	
+	.submit {
+		width: 100px;
+		height: 30px;
+		line-height: 24px;
+		font-size: 18px;
+		background: white;
+		border: royalblue solid 2px;
+		border-radius: 4px;
+		color: royalblue;
+		text-align: center;
+	}
+</style>
+<script>
+
+</script>
+</head>
+
+<body>
+	<div id="top">
+	<div style="width: 90%; margin: auto">
+	<div id="logoframe"><img src="imgs/logo-header-games.png" width="160" class="logo"/></div>
+	<div id="navframe">
+		<div class="navbt"><a href="index.html" class="navtitle">首页</a></div>
+		<div class="navbt"><a href="download.html" class="navtitle">下载应用</a></div>
+		<div class="navbt"><a href="register.html" class="navtitle">注册</a></div>
+	</div>
+	<div id="contact">
+		<a href="https://twitter.com/wangyichn"><div class="contactbt fa fa-twitter fa-2x"></div></a>
+		<a href="https://weibo.com/wangyivip"><div class="contactbt fa fa-weibo fa-2x"></div></a>
+	</div>
+	</div>
+</div>
+	<div class="wrapper">
+		<div class="frame">
+			<div class="title"><i class="fa fa-arrow-circle-o-down" style="padding-right: 20px"></i>注册 Disney ID</div>
+			<div class="formframe">
+				<form id="reg">
+					<div class="row">
+						<label class="label">用户名</label>
+						<input class="input inputbox" name="username" type="text" autocomplete="off" required maxlength="12" placeholder="请设置4-12位用户名">
+					</div>
+				  	<div class="row">
+						<label class="label">密码</label>
+						<input class="input inputbox" id="password" name="password" type="password" autocomplete="new-password" required maxlength="18" placeholder="请设置6-18位密码">
+					</div>
+					<div class="row">
+						<label class="label">确认密码</label>
+						<input class="input inputbox" id="password2" name="password2" type="password" autocomplete="new-password" required maxlength="18" placeholder="请确认密码" onBlur="javascript:pass()">
+						<div id="pwwrong">两次输入的密码不相同！</div>
+					</div>
+					<div class="row">
+						<label class="label">邮箱</label>
+						<input class="input inputbox" name="email" type="email" autocomplete="new-password" required checked placeholder="请输入邮箱地址">
+					</div>
+					<div class="more"><a href="javascript:more()" id="fujia">附加选项 +</a></div>
+					<div class="row" id="nickname" style="display: none">
+						<label class="label">昵称</label>
+						<input class="input inputbox" name="nickname" type="text" maxlength="12" placeholder="起个名字吧">
+					</div>
+					<div class="row" id="sex" style="display: none">
+						<label class="label">性别</label>
+						<input class="input input2" name="sex" type="radio" value="m"><label class="label2">男</label>
+						<input class="input2" name="sex" type="radio" value="f"><label class="label2">女</label>
+					</div>
+					<div class="row" id="age" style="display: none">
+						<label class="label">年龄</label>
+						<input class="input inputbox" name="sex" type="number" value="age" style="width: 83px;" min="5" max="100" checked>
+					</div>
+					<div class="row" id="loc" style="display: none">
+						<label class="label">国家/地区</label>
+						<select class="input" style="width: 100px;" name="loc">
+							<option value="cn">中国</option>
+							<option value="jp">日本</option>
+							<option value="kr">한국</option>
+							<option value="sg">Singapore</option>
+							<option value="thai">ไทย</option>
+							<option value="ra">россия</option>
+							<option value="us">America</option>
+							<option value="en">England</option>
+							<option value="etc">Other</option>
+						</select>
+					</div>
+					<div class="row" id="cer" style="display: none">
+						<label class="label">通行证</label>
+						<input class="input" name="crt" type="file" style="font-size: 16px;">
+					</div>
+					<div style="clear: both;"></div>
+					<div style="width: 100px; margin: 10px auto;">
+						<input type="submit" class="submit" id="submit">
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
+	<div id="footer">
+	<ul>
+		<li><a href="javascript:xieyi()">用户协议</a></li>
+		<li><a href="mailto:wayi@mengzhicai.tk">联系我们</a></li>
+	  	<li><a href="https://twitter.com/wangyichn">作者博客</a></li>
+	</ul>
+	<p>CopyRight © 2017 WAYISAMA</p>
+</div>
+</body>
+</html>
