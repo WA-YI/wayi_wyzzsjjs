@@ -27,7 +27,7 @@
 	
 	.formframe {
 		background: white;
-		box-shadow: 0px -3px 6px 0px #444;
+		box-shadow: 0px 0px 8px 2px #444;
 		padding: 60px 0;
 		position: relative;
 	}

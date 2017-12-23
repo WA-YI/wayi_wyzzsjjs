@@ -2,13 +2,13 @@
 
 function open()
 {
-	if (document.getElementById('cate').style.display=="none")
+	if (document.getElementById('cate').style.display=="block")
 	{ 
-		document.getElementById("filter").style.color="#222";
-		document.getElementById("cate").style.display="block";
-	} else {
 		document.getElementById("filter").style.color="#bbb";
 		document.getElementById("cate").style.display="none";
+	} else {
+		document.getElementById("filter").style.color="#222";
+		document.getElementById("cate").style.display="block";
 	}
 }
 
@@ -29,6 +29,7 @@ function all()
 	document.getElementById("game13").style.display="block";
 	document.getElementById("game14").style.display="block";
 	document.getElementById("game15").style.display="block";
+	document.getElementById("game16").style.display="block";
 }
 
 function mickey()
@@ -47,6 +48,7 @@ function mickey()
 	document.getElementById("game12").style.display="none";
 	document.getElementById("game13").style.display="block";
 	document.getElementById("game14").style.display="none";
+	document.getElementById("game15").style.display="block";
 	document.getElementById("game15").style.display="block";
 }
 
@@ -67,6 +69,7 @@ function net()
 	document.getElementById("game13").style.display="block";
 	document.getElementById("game14").style.display="block";
 	document.getElementById("game15").style.display="none";
+	document.getElementById("game15").style.display="block";
 }
 
 function ap()
@@ -85,5 +88,6 @@ function ap()
 	document.getElementById("game12").style.display="none";
 	document.getElementById("game13").style.display="none";
 	document.getElementById("game14").style.display="none";
+	document.getElementById("game15").style.display="none";
 	document.getElementById("game15").style.display="none";
 }

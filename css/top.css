@@ -96,8 +96,8 @@
 
 	.banner {
 		width: 100%;
-		/*min-width: 1260px;*/
-		max-width: 1440px;
+		/*min-width: 1260px;
+		max-width: 1440px;*/
 		overflow: hidden;
 	}
 	
